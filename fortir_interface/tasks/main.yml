@@ -1,0 +1,28 @@
+---
+
+- name: Configure Interface.
+  fortios_system_interface:
+      host:  "{{ fortihost }}"
+      username: "{{ user }}"
+      password: "{{ password }}"
+#      vdom:  "root"
+      https: "True"
+      state: "present"
+      ssl_verify: "False"
+      system_interface:
+       vdom: "root"
+       allowaccess: "ping"
+       arpforward: "enable"
+       role: "lan"
+       name: "{{ namee }}"
+       type: "vlan"
+       ip: "{{ ipmask}}"
+       status: "up"
+       speed: "auto"
+       vlanid: "{{ vlanidd }}"
+       interface: "Downlink"
+       vrf: "0"
+       mode: "static"
+#       algorithm: "L3"
+       defaultgw: "enable"
+       distance: "33"
