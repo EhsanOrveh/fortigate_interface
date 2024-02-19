@@ -15,6 +15,6 @@ password: !vault |
           $ANSIBLE_VAULT;1.1;AES256
           33333131346131356462653961633034626432643466373231376339303434333565666430313633
           
-namee: fooladshahriar
+namee: #interface_name
 ipmask: x.x.x.x 255.255.255.248
 vlanidd: #vlan_id
